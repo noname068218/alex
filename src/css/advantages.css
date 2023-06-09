@@ -1,0 +1,109 @@
+.advantage-section {
+  background-color: var(--dark-violet-color);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.advantage-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .advantage-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantage-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.advantage-list {
+  max-width: 335px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .advantage-list {
+    max-width: 768px;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantage-list {
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 70px;
+  }
+  .forline {
+    position: relative;
+  }
+}
+.advantage-item {
+  padding-right: 28px;
+  padding-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .advantage-item {
+    max-width: 336px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantage-item {
+    max-width: 326px;
+    padding-right: 18px;
+  }
+  .item-line::after {
+    position: absolute;
+    top: 50%;
+    left: 264px;
+    content: '';
+    display: block;
+    width: 124px;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+  }
+}
+.last-item {
+  padding-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .last-item {
+    padding-bottom: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .last-item {
+    max-width: 308px;
+    padding-right: 0;
+  }
+}
+.advantage-item-padding {
+  padding-bottom: 0;
+}
+.advantage-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  margin-bottom: 22px;
+}
+.advantage-svg {
+  width: 32px;
+}
+.title-third {
+  margin-bottom: 18px;
+}
+.advantage-text {
+  line-height: 1.21;
+  color: rgba(255, 255, 255, 0.7);
+}

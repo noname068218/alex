@@ -1,0 +1,205 @@
+<!-- Section HERO -->
+<section class="container hero-container-section" id="hero-section">
+  <div class="hero-container hero-content">
+    <h1 class="hero-title visually-hidden">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </h1>
+    <h2 class="hero-uppertitle">
+      Treat yourself or a loved one to <br />
+      our finest ingredients for a moment <br />
+      of pure delight!
+    </h2>
+    <div class="hero-buttons-div">
+      <ul class="hero-button-list list">
+        <li class="hero-button-list-item-one">
+          <button data-modal-open class="hero-button-list-button" type="button">
+            Buy now
+          </button>
+        </li>
+        <li class="hero-button-list-item">
+          <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
+          <a class="hero-button-list-item-a link" href="#how-its-made">
+            <p class="hero-button-list-button-link">How it’s made</p>
+          </a>
+        </li>
+      </ul>
+
+      <div class="hero-scroll-down-div">
+        <a href="#footer-page" class="hero-scroll-down-text">scroll down</a>
+        <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
+        <a href="#footer-page" class="hero-scroll-down-link link">
+          <svg class="hero-scroll-down-icon" width="14" height="7">
+            <use href="/img/sprite.svg#icon-Vector-2"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- MODAL BUY NOW -->
+<div class="backdrop-modal-buy-now is-hidden" data-modal>
+  <div class="modal-buy-now-cont">
+    <div class="modal-buy-now-content">
+      <button type="button" data-modal-close class="modal-buy-close-button">
+        <svg class="modal-buy-close-icon" width="12" height="12">
+          <use href="/img/sprite.svg#icon-close-black-modal-buy"></use>
+        </svg>
+      </button>
+      <strong class="modal-buy-now-title"
+        ><span class="modal-buy-now-title-word">BUY </span>NOW</strong
+      >
+      <ul class="modal-buy-now-list list">
+        <li id="item-first" class="modal-buy-now-list-item">
+          <div class="modal-buy-now-list-item-img-and-text">
+            <img
+              srcset="
+                /img/hero-and-buynow-imgs/buy-now-first-chocolate-mobile-1x.jpg   84w,
+                /img/hero-and-buynow-imgs/buy-now-first-chocolate-mobile-2x.jpg  168w,
+                /img/hero-and-buynow-imgs/buy-now-first-chocolate-desktop-1x.jpg 120w,
+                /img/hero-and-buynow-imgs/buy-now-first-chocolate-desktop-2x.jpg 240w
+              "
+              sizes="(min-width: 768px) 120px, (min-width: 0px) 84px, 100vw"
+              src="/img/hero-and-buynow-imgs/buy-now-first-chocolate-mobile-1x.jpg"
+              alt="chocolate-one"
+              class="modal-buy-now-list-item-img-chocolate"
+            />
+
+            <div class="modal-buy-now-list-item-div">
+              <p class="modal-buy-now-list-item-text">100 g</p>
+            </div>
+          </div>
+        </li>
+        <li id="item-second" class="modal-buy-now-list-item">
+          <div class="modal-buy-now-list-item-img-and-text">
+            <img
+              srcset="
+                /img/hero-and-buynow-imgs/buy-now-second-chocolate-mobile-1x.jpg   84w,
+                /img/hero-and-buynow-imgs/buy-now-second-chocolate-mobile-2x.jpg  168w,
+                /img/hero-and-buynow-imgs/buy-now-second-chocolate-desktop-1x.jpg 120w,
+                /img/hero-and-buynow-imgs/buy-now-second-chocolate-desktop-2x.jpg 240w
+              "
+              sizes="(min-width: 768px) 120px, (min-width: 0px) 84px, 100vw"
+              src="/img/hero-and-buynow-imgs/buy-now-second-chocolate-mobile-1x.jpg"
+              alt="chocolate-two"
+              class="modal-buy-now-list-item-img-chocolate"
+            />
+            <div class="modal-buy-now-list-item-div">
+              <p class="modal-buy-now-list-item-text">200 g</p>
+            </div>
+          </div>
+        </li>
+        <li id="item-third" class="modal-buy-now-list-item">
+          <div class="modal-buy-now-list-item-img-and-text">
+            <img
+              srcset="
+                /img/hero-and-buynow-imgs/buy-now-third-chocolate-mobile-1x.jpg   84w,
+                /img/hero-and-buynow-imgs/buy-now-third-chocolate-mobile-2x.jpg  168w,
+                /img/hero-and-buynow-imgs/buy-now-third-chocolate-desktop-1x.jpg 120w,
+                /img/hero-and-buynow-imgs/buy-now-third-chocolate-desktop-2x.jpg 240w
+              "
+              sizes="(min-width: 768px) 120px, (min-width: 0px) 84px, 100vw"
+              src="/img/hero-and-buynow-imgs/buy-now-third-chocolate-mobile-1x.jpg"
+              alt="chocolate-three"
+              class="modal-buy-now-list-item-img-chocolate-three"
+            />
+            <div class="modal-buy-now-list-item-div">
+              <p class="modal-buy-now-list-item-text">300 g</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <form class="mobal-buy-now-form">
+        <label class="modal-buy-now-labels" for="personal-inf-second"
+          >Personal information</label
+        >
+        <div class="modal-buy-now-name-and-surname">
+          <input
+            required
+            type="text"
+            name="personal-inf"
+            class="form-buy-now-field-personal form-buy-now-field-personal-ns"
+            id="personal-inf-second"
+            placeholder="Name"
+            autocomplete="off"
+          />
+          <input
+            required
+            type="text"
+            name="personal-inf"
+            class="form-buy-now-field-personal form-buy-now-field-personal-ns"
+            id="personal-inf-two-second"
+            placeholder="Surname"
+            autocomplete="off"
+          />
+        </div>
+        <label class="modal-buy-now-labels" for="personal-email-second"
+          >Email</label
+        >
+        <input
+          required
+          type="email"
+          name="personal-email"
+          class="form-buy-now-field-email form-buy-now-field-personal"
+          id="personal-email-second"
+          placeholder="Enter your email"
+          autocomplete="off"
+        />
+        <label class="modal-buy-now-labels" for="personal-tell-second"
+          >Phone number</label
+        >
+        <div class="form-buy-now-field-phone-div">
+          <input
+            required
+            type="tel"
+            maxlength="9"
+            minlength="9"
+            name="personal-tell"
+            class="form-buy-now-field-phone form-buy-now-field-personal"
+            id="personal-tell-second"
+            placeholder="Phone number"
+            autocomplete="off"
+          />
+          <svg class="icon-leftIcon" width="24" height="24">
+            <use href="/img/sprite.svg#icon-LeftIcon"></use>
+          </svg>
+          <p class="form-buy-now-field-phone-text-number">+380</p>
+        </div>
+        <label class="modal-buy-now-labels" for="personal-card-second"
+          >Card number</label
+        >
+        <div class="form-buy-now-field-card-div">
+          <input
+            required
+            type="text"
+            maxlength="16"
+            minlength="16"
+            name="personal-card"
+            class="form-buy-now-field-card form-buy-now-field-personal"
+            id="personal-card-second"
+            placeholder="Enter card"
+            autocomplete="off"
+          />
+          <svg class="icon-mastercard" width="32" height="21">
+            <use href="/img/sprite.svg#icon-Mastercard"></use>
+          </svg>
+        </div>
+        <label class="modal-buy-now-labels" for="client-comment-second"
+          >Comment</label
+        >
+        <textarea
+          name="client-comment"
+          class="form-buy-now-field-comment"
+          id="client-comment-second"
+          placeholder="Enter text"
+          autocomplete="off"
+        ></textarea>
+
+        <button class="modal-buy-now-sumbit-button" type="submit">
+          Sumbit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./unique-components.css');
+@import url('./how-its-made.css');
+@import url('./our-products.css');
+@import url('./top-sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+
+:root {
+  /* Fonts */
+  --main-font: Montserrat, sans-serif;
+
+  /* Colors */
+  --black-color: #111111;
+  --dark-violet-color: #1e1823;
+  --orange-color: #fd9222;
+  --white-color: #fafafa;
+  --background-color: #e2e2e2;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title-second {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+
+.title-third {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.paragraph {
+  letter-spacing: -0.02em;
+}
+
+.light {
+  color: #ffffff;
+}
+
+.dark {
+  color: #111111;
+}
